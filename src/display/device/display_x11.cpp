@@ -119,9 +119,9 @@ int CreateX11Window(
         GLX_ALPHA_SIZE      , 8,
         GLX_DEPTH_SIZE      , 24,
         GLX_STENCIL_SIZE    , 8,
-        GLX_DOUBLEBUFFER    , glx_doublebuffer ? True : False,
-        GLX_SAMPLE_BUFFERS  , glx_sample_buffers,
-        GLX_SAMPLES         , glx_sample_buffers > 0 ? glx_samples : 0,
+        GLX_DOUBLEBUFFER    , glx_doublebuffer ? False : False,
+        //GLX_SAMPLE_BUFFERS  , glx_sample_buffers,
+        //GLX_SAMPLES         , glx_sample_buffers > 0 ? glx_samples : 0,
         None
     };
 
